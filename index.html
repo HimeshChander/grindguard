@@ -171,35 +171,10 @@
 
     <!-- LEFT PANEL -->
     <aside class="panel-left">
-      <div class="section-label">Camera Feed</div>
-
-      <div class="cam-wrap">
-        <video id="videoEl" autoplay muted playsinline></video>
-        <canvas id="canvasEl"></canvas>
-        <div class="cam-label">LIVE · EYE TRACK</div>
-        <div class="eye-status" id="eyeEmoji">😴</div>
-        <div class="cam-privacy-tag">🔒 Not recorded</div>
+      <div class="section-label">Activity Log</div>
+      <div class="break-log" id="breakLog">
+        <div class="empty-log">No activity yet.<br>Start a session to track breaks.</div>
       </div>
-
-      <div class="timer-block">
-        <div class="section-label" style="margin-bottom:10px">Session Time</div>
-        <div class="timer-big" id="sessionTimer">00:00:00</div>
-        <div class="timer-label">focused time</div>
-      </div>
-
-      <div class="stats-row">
-        <div class="stat-card">
-          <div class="stat-val red" id="distractCount">0</div>
-          <div class="stat-lbl">Distractions</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-val" id="breakCount">0</div>
-          <div class="stat-lbl">Breaks</div>
-        </div>
-      </div>
-
-      <button id="breakBtn" style="display:none">☕ Take a Break</button>
-      <button id="startBtn">▶ Start Focus Session</button>
     </aside>
 
     <!-- CENTER PANEL -->
@@ -244,10 +219,35 @@
 
     <!-- RIGHT PANEL -->
     <aside class="panel-right">
-      <div class="section-label">Activity Log</div>
-      <div class="break-log" id="breakLog">
-        <div class="empty-log">No activity yet.<br>Start a session to track breaks.</div>
+      <div class="section-label">Camera Feed</div>
+
+      <div class="cam-wrap">
+        <video id="videoEl" autoplay muted playsinline></video>
+        <canvas id="canvasEl"></canvas>
+        <div class="cam-label">LIVE · EYE TRACK</div>
+        <div class="eye-status" id="eyeEmoji">😴</div>
+        <div class="cam-privacy-tag">🔒 Not recorded</div>
       </div>
+
+      <div class="timer-block">
+        <div class="section-label" style="margin-bottom:10px">Session Time</div>
+        <div class="timer-big" id="sessionTimer">00:00:00</div>
+        <div class="timer-label">focused time</div>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat-card">
+          <div class="stat-val red" id="distractCount">0</div>
+          <div class="stat-lbl">Distractions</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val" id="breakCount">0</div>
+          <div class="stat-lbl">Breaks</div>
+        </div>
+      </div>
+
+      <button id="breakBtn" style="display:none">☕ Take a Break</button>
+      <button id="startBtn">▶ Start Focus Session</button>
     </aside>
 
   </div><!-- end .main -->

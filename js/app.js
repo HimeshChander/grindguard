@@ -654,6 +654,14 @@ function sleep(ms) {
 }
 
 // ════════════════════════════════════════════════
+// TAB VISIBILITY — hide camera when tab is minimized/hidden
+// ════════════════════════════════════════════════
+document.addEventListener('visibilitychange', () => {
+  document.querySelector('.cam-wrap').style.visibility =
+    document.hidden ? 'hidden' : 'visible';
+});
+
+// ════════════════════════════════════════════════
 // BOOT
 // ════════════════════════════════════════════════
 document.getElementById('startBtn').addEventListener('click', toggleSession);
