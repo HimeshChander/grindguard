@@ -1,4 +1,4 @@
-# GrindGuard 🎯
+# GrindGuard 
 
 **Your private, browser-based study companion.**
 Beat the distraction, boost your traction.
